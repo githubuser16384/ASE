@@ -1,6 +1,6 @@
 import unittest
 
-class Calculator:
+class Calculator:   
     """
     A simple calculator class that provides basic mathematical operations.
     """
@@ -13,12 +13,11 @@ class Calculator:
         :param y: The second number.
         :return: The sum of x and y.
         """
-        return x + y
-    
+        return x + y   
+     
     def subtract(self, x, y):
         """
         Subtract two numbers.
-
         :param x: The first number.
         :param y: The second number.
         :return: The result of subtracting y from x.
@@ -57,7 +56,7 @@ class CalculatorTest(unittest.TestCase):
         self.calc = Calculator()
 
     def test_add(self):
-        self.assertEqual(11, self.calc.add(3, 8), "The addition is wrong")
+        self.assertEqual(10, self.calc.add(3, 8), "The addition is wrong")
 
     def test_subtract(self):
         self.assertEqual(12, self.calc.subtract(15, 3), "Subtraction is wrong")
@@ -70,4 +69,4 @@ class CalculatorTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    print("Sushan")
+    print("Ankur")
