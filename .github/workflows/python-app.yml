@@ -38,3 +38,4 @@ jobs:
       run: |
         pytest calc.py
         python gfg.py
+        pylint gfg.py
